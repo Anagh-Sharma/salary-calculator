@@ -1,0 +1,131 @@
+/* Global Settings */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(243,242,239);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Helper Classes */
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.row {
+    display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+.justify-space-around {
+    justify-content: space-around;
+}
+.justify-space-evenly {
+    justify-content: space-evenly;
+}
+.justify-space-center {
+    justify-content: center;
+}
+.justify-space-left {
+    justify-content: left;
+}
+.justify-space-right {
+    justify-content: right;
+}
+
+.align-items-center {
+    align-items: center;
+}
+.align-items-start {
+    align-items: flex-start;
+}
+.align-items-end {
+    align-items: flex-end;
+}
+.align-items-stretch {
+    align-items: stretch;
+}
+
+.grid {
+    display: grid;
+}
+
+.w-100 {
+    width: 100%;
+}
+.underline{
+    text-decoration: underline;
+}
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@media (max-width:1200px) {
+    .container {
+        max-width: 960px;
+    }   
+}
+
+@media (max-width:992px) {
+    .container {
+        max-width: 740px;
+    }   
+}
+
+@media (max-width:768px) {
+    .container {
+        max-width: 100%;
+        width: 100%;
+    }   
+}
+
+/* Header */
+#header{
+    /* background-color: #fff; */
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 63px;
+    align-items: baseline;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+/* Body */
+.container > label{
+    margin-top: 8px;
+    margin-bottom: 2px;
+}
+.container > input{
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+.container > button, div {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}

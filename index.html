@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Global -->
+
+    <!-- <script src="scripts/model.js"></script> -->
+    <!-- <script src="scripts/controller.js" defer></script> -->
+    <!-- Defer used for lazy loading. Instead, the script could have been placed at the end of body -->
+
+    <!-- Instead of lazy loading:
+    Load script but not execute contents
+    Execute contents when an event takes placeat
+    Inplemeted using window.addEventListener('load', bindEvents); in controller.js -->
+    <!-- <script src="scripts/controller.js"></script> -->
+
+    <!-- Modular JS -->
+    <script src="scripts/controller.js" type="module"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 id="header" class="alert-info text-center">--- Salary Calculator ---</h1>
+        <label for="basic-salary">Base Salary</label>
+        <input type="text" id="basicSalary" class="form-control" placeholder="Enter an Integer">
+        <button id="compute" class="btn btn-primary">COMPUTE</button>
+
+        <hr>
+
+        <!-- Allowances -->
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Allowances
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div id="output" class="accordion-body">
+
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Allowances share
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <table border="2" width="100%" cellpadding="10" cellspacing="10" class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th>Allowance</th>
+                          <th>Percentage of Base Salary</th>
+                      </tr>
+                  </thead>
+          
+                  <tbody>
+                      <tr>
+                          <td>House Rent Allowance (HRA)</td>
+                          <td>50%</td>
+                      </tr>
+                      <tr>
+                          <td>Dearness Allowance (DA)</td>
+                          <td>20%</td>
+                      </tr>
+                      <tr>
+                          <td>Transport Allowance (TA)</td>
+                          <td>30%</td>
+                      </tr>
+                      <tr>
+                          <td>Medical Allowance (MA)</td>
+                          <td>25%</td>
+                      </tr>
+                      <tr>
+                          <td>Gross Salary (GS)</td>
+                          <td>BS + HRA + DA + TA + MA</td>
+                      </tr>
+                      <tr>
+                          <td>Provident Fund (PF)</td>
+                          <td>5%</td>
+                      </tr>
+                      <tr>
+                          <td>Tax</td>
+                          <td>10%</td>
+                      </tr>
+                      <tr>
+                          <td>Net Salary (NS)</td>
+                          <td>GS - Tax - PF</td>
+                      </tr>
+                  </tbody>
+          
+                  <!-- <tfoot></tfoot> -->
+              </table>
+          
+              </div>
+            </div>
+          </div>
+      </div>
+
+    </div>
+</body>
+</html>
