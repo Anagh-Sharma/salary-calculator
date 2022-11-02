@@ -28,7 +28,7 @@ A simple salary allowances calculator.
 				- recieve output from Model/Data Layer
 				- send output to Presentation/View Layer
 			- Function createPTag to :
-				- Create <p> tags for Presentation/View Layer
+				- Create p tags for Presentation/View Layer
 		- Model/Data Layer:
 			- Logic for allowances calcumations:
 				- HRA, DA, etc.
