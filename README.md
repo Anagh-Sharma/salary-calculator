@@ -1,34 +1,34 @@
 # salary-calculator
 A simple salary allowances calculator.
-		- Title	:	Salary Calculator
-		- Description:
-			- Basic salary text box, followed by a "Compute button"
-			- Loosely coupled app
-			- Follow MVC and SRP
-			- "Compute button" will compute "Allowances" as follows:
-				- HRA	:	50%
-				- DA	:	20%
-				- TA	:	30%
-				- MA	:	25%
+- Title	:	Salary Calculator
+- Description:
+	- Basic salary text box, followed by a "Compute button"
+	- Loosely coupled app
+	- Follow MVC and SRP
+	- "Compute button" will compute "Allowances" as follows:
+		- HRA	:	50%
+		- DA	:	20%
+		- TA	:	30%
+		- MA	:	25%
                 - GS	:	BS + HRA + DA + TA + MA
-				- PF	:	5%
-				- Tax	:	10%
-				- NS	:	GS - Tax - PF
-			- Architecture:
-				- Presentation/View Layer:
-					- HTML page
-					- Skeleton using bootstrap
-					- take input
-					- "Click" to submit
-				- Controller:	
-					- Abstraction layer
-					- Listen to "Click" from Presentation/View Layer
-					- Function to take input and send to Model/Data Layer
-					- Function to recieve output from Model/Data Layer
-					- Function to send output to Presentation/View Layer
-				- Model/Data Layer:
-					- Operation + Structure
-					- Logic
-						- HRA/DA..etc
-					- Function to take input and send to Model/Data Layer
-					- Function to send output to Model/Data Layer	
+		- PF	:	5%
+		- Tax	:	10%
+		- NS	:	GS - Tax - PF
+	- Architecture:
+		- Presentation/View Layer:
+			- HTML page
+			- Skeleton using bootstrap
+			- take input
+			- "Click" to submit
+		- Controller:	
+			- Abstraction layer
+			- Listen to "Click" from Presentation/View Layer
+			- Function to take input and send to Model/Data Layer
+			- Function to recieve output from Model/Data Layer
+			- Function to send output to Presentation/View Layer
+		- Model/Data Layer:
+			- Operation + Structure
+			- Logic
+				- HRA/DA..etc
+			- Function to take input and send to Model/Data Layer
+			- Function to send output to Model/Data Layer	
