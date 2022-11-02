@@ -18,17 +18,18 @@ A simple salary allowances calculator.
 		- Presentation/View Layer:
 			- HTML page
 			- Skeleton using bootstrap
-			- take input
-			- "Click" to submit
+			- Take Base Salary input
+			- Click "COMPUTE" to calculate allowances
 		- Controller:	
 			- Abstraction layer
-			- Listen to "Click" from Presentation/View Layer
-			- Function to take input and send to Model/Data Layer
-			- Function to recieve output from Model/Data Layer
-			- Function to send output to Presentation/View Layer
+			- Listen to "COMPUTE" from Presentation/View Layer
+			- Function computeAllowances to :
+				- take input and send to Model/Data Layer
+				- recieve output from Model/Data Layer
+				- send output to Presentation/View Layer
+			- Function createPTag to :
+				- Create <p> tags for Presentation/View Layer
 		- Model/Data Layer:
-			- Operation + Structure
-			- Logic
-				- HRA/DA..etc
-			- Function to take input and send to Model/Data Layer
-			- Function to send output to Model/Data Layer	
+			- Logic for allowances calcumations:
+				- HRA, DA, etc.
+			- Object with functions to calculate allowances.
